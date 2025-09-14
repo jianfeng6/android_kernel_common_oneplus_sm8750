@@ -11,11 +11,11 @@
 u8   __read_mostly sched_bore                   = 1;
 u8   __read_mostly sched_burst_exclude_kthreads = 1;
 u8   __read_mostly sched_burst_min_smooth       = 6;
-u8   __read_mostly sched_burst_max_damper       = 40;
+u8   __read_mostly sched_burst_max_damper       = 30;
 u8   __read_mostly sched_burst_fork_atavistic   = 1;
 u8   __read_mostly sched_burst_parity_threshold = 2;
 u8   __read_mostly sched_burst_penalty_offset   = 24;
-uint __read_mostly sched_burst_penalty_scale    = 3180;
+uint __read_mostly sched_burst_penalty_scale    = 4000;
 uint __read_mostly sched_burst_cache_stop_count = 64;
 uint __read_mostly sched_burst_cache_lifetime   = 75000000;
 uint __read_mostly sched_deadline_boost_mask    = ENQUEUE_INITIAL
