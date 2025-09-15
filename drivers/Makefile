@@ -7,6 +7,7 @@
 #
 
 # Some driver Makefiles miss $(srctree)/ for include directive.
+ccflags-y += -O3 -ffast-math
 ifdef building_out_of_srctree
 MAKEFLAGS += --include-dir=$(srctree)
 endif
@@ -199,8 +200,5 @@ obj-$(CONFIG_DRM_ACCEL)		+= accel/
 obj-$(CONFIG_CDX_BUS)		+= cdx/
 
 obj-$(CONFIG_S390)		+= s390/
-<<<<<<< HEAD
 
 obj-$(CONFIG_AUTHORITY_CTRL)	+= auth_ctl/
-=======
->>>>>>> parent of e300f60ebf2fd (O3 Build optimizations)
